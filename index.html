@@ -1,4 +1,104 @@
-<link href=styles.css rel=stylesheet><link href=favicon/apple-touch-icon.png rel=apple-touch-icon sizes=180x180><link href=favicon/favicon-32x32.png rel=icon sizes=32x32 type=image/png><link href=favicon/favicon-16x16.png rel=icon sizes=16x16 type=image/png><link href=favicon/site.webmanifest rel=manifest><meta charset=utf-8><div class="page sidepage page1"onclick=changePage(0)><div class=head-clip><img alt="Yelling Mask"class=head0 src=assets/gondola_head.png></div><div class=title><h2>GONDOLA<br>GONDOLA</h2><h3>by</h3><h3><i>Ross McReynolds</i></h3></div></div><div class="page page2"onclick=changePage(1) id=center-me><div class=speech-bubble>Hey, don't touch us! The text is where it's at...</div><a href=https://rossmcreynolds.bandcamp.com/album/gondola rel="noopener noreferrer"target=_blank><img alt="Xeroxed East-Asian Yelling Head"class=head1 src=assets/gondola_head.png></a><img alt="Xeroxed East-Asian Yelling Head"class="small-head head2"src=assets/gondola_head.png onclick=toggleSpeech(1) onmouseout=toggleSpeech(0) onmouseover=toggleSpeech(1)> <img alt="Xeroxed East-Asian Yelling Head"class="small-head head3"src=assets/gondola_head.png onclick=toggleSpeech(1) onmouseout=toggleSpeech(0) onmouseover=toggleSpeech(1)> <img alt="Xeroxed East-Asian Yelling Head"class="small-head head4"src=assets/gondola_head.png onclick=toggleSpeech(1) onmouseout=toggleSpeech(0) onmouseover=toggleSpeech(1)> <img alt="Xeroxed East-Asian Yelling Head"class="small-head head5"src=assets/gondola_head.png onclick=toggleSpeech(1) onmouseout=toggleSpeech(0) onmouseover=toggleSpeech(1)><div class="title-container track1"onclick=audioManager(0),toggleSpeech(0) onmouseout=clearInterval(repeater),leaveHover(0) onmouseover="repeater=setInterval(hoverEffect,300,0)"><h1 class=title-text><a style=font-family:arial>1.</a><span>IS THIS EVEN REaL</span></h1></div><div class="title-container track2"onclick=audioManager(1),toggleSpeech(0) onmouseout=clearInterval(repeater),leaveHover(1) onmouseover="repeater=setInterval(hoverEffect,300,1)"><h1 class=title-text><a style="font-family:'times new roman'">2.</a><span>SKETCHES OF LONDON</span></h1></div><div class="title-container track3"onclick=audioManager(2),toggleSpeech(0) onmouseout=clearInterval(repeater),leaveHover(2) onmouseover="repeater=setInterval(hoverEffect,300,2)"><h1 class=title-text><a style=font-family:verdana>3.</a><span>TIED TO HIS BROTHER</span></h1></div><div class="title-container track4"onclick=audioManager(3),toggleSpeech(0) onmouseout=clearInterval(repeater),leaveHover(3) onmouseover="repeater=setInterval(hoverEffect,300,3)"><h1 class=title-text><a style="font-family:'courier new'">4.</a><span>INT.aMB</span></h1></div><div class="title-container track5"onclick=audioManager(4),toggleSpeech(0) onmouseout=clearInterval(repeater),leaveHover(4) onmouseover="repeater=setInterval(hoverEffect,300,4)"><h1 class=title-text><a style=font-family:georgia>5.</a><span>SUNDaWG</span></h1></div><div class="title-container track6"onclick=audioManager(5),toggleSpeech(0) onmouseout=clearInterval(repeater),leaveHover(5) onmouseover="repeater=setInterval(hoverEffect,300,5)"><h1 class=title-text><a style=font-family:tahoma>6.</a><span>KORDaRP</span></h1></div><div class="title-container track7"onclick=audioManager(6),toggleSpeech(0) onmouseout=clearInterval(repeater),leaveHover(6) onmouseover="repeater=setInterval(hoverEffect,300,6)"><h1 class=title-text><a style=font-family:garamond>7.</a><span>EXTaUDSEQ</span></h1></div><div class="title-container track8"onclick=audioManager(7),toggleSpeech(0) onmouseout=clearInterval(repeater),leaveHover(7) onmouseover="repeater=setInterval(hoverEffect,300,7)"><h1 class=title-text><a style="font-family:''Brush Script MT">8.</a><span>COUPLa BEATS</span></h1></div><div class="title-container track9"onclick=audioManager(8),toggleSpeech(0) onmouseout=clearInterval(repeater),leaveHover(8) onmouseover="repeater=setInterval(hoverEffect,300,8)"><h1 class=title-text><a style="font-family:'Trebuchet MS'">9.</a><span>a NAGGING</span></h1></div></div><div class="page sidepage page3"onclick=changePage(2)><pre>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <meta charset="utf-8" />
+</head>
+
+<body>
+
+  <div class="page1 page sidepage" onclick="changePage(0)">
+    <div class="head-clip">
+      <img src="assets/gondola_head.png" alt="Yelling Mask" class="head0">
+    </div>
+
+    <div class="title">
+      <h2>GONDOLA<br>GONDOLA</h2>
+      <h3>by</h3>
+      <h3><i>Ross McReynolds</i></h3>
+    </div>
+  </div>
+
+  <div class="page2 page" id="center-me" onclick="changePage(1)">
+
+    <div class='speech-bubble'>Hey, don't touch us! The text is where it's at...</div>
+    <a href="https://rossmcreynolds.bandcamp.com/album/gondola" target="_blank" rel="noopener noreferrer"><img src="assets/gondola_head.png" alt="Xeroxed East-Asian Yelling Head" class="head1"></a>
+    <img src="assets/gondola_head.png" alt="Xeroxed East-Asian Yelling Head" class="head2 small-head" onmouseover="toggleSpeech(1);" onmouseout="toggleSpeech(0);" onclick="toggleSpeech(1);">
+    <img src="assets/gondola_head.png" alt="Xeroxed East-Asian Yelling Head" class="head3 small-head" onmouseover="toggleSpeech(1);" onmouseout="toggleSpeech(0);" onclick="toggleSpeech(1);">
+    <img src="assets/gondola_head.png" alt="Xeroxed East-Asian Yelling Head" class="head4 small-head" onmouseover="toggleSpeech(1);" onmouseout="toggleSpeech(0);" onclick="toggleSpeech(1);">
+    <img src="assets/gondola_head.png" alt="Xeroxed East-Asian Yelling Head" class="head5 small-head" onmouseover="toggleSpeech(1);" onmouseout="toggleSpeech(0);" onclick="toggleSpeech(1);">
+
+
+
+
+        <div class="title-container track1" onclick="audioManager(0); toggleSpeech(0);"
+      onmouseover="repeater=setInterval(hoverEffect, 300, 0);" onmouseout="clearInterval(repeater);leaveHover(0);">
+      <h1 class="title-text">
+        <a style="font-family:arial">1.</a><span>IS THIS EVEN REaL</span>
+      </h1>
+    </div>
+
+    <div class="title-container track2" onclick="audioManager(1); toggleSpeech(0);"
+      onmouseover="repeater=setInterval(hoverEffect, 300, 1);" onmouseout="clearInterval(repeater);leaveHover(1);">
+      <h1 class="title-text">
+        <a style="font-family:'times new roman'">2.</a><span>SKETCHES OF LONDON</span>
+      </h1>
+    </div>
+
+    <div class="title-container track3" onclick="audioManager(2); toggleSpeech(0);"
+      onmouseover="repeater=setInterval(hoverEffect, 300, 2);" onmouseout="clearInterval(repeater);leaveHover(2);">
+      <h1 class="title-text">
+        <a style="font-family:verdana">3.</a><span>TIED TO HIS BROTHER</span>
+      </h1>
+    </div>
+
+    <div class="title-container track4" onclick="audioManager(3); toggleSpeech(0);"
+      onmouseover="repeater=setInterval(hoverEffect, 300, 3);" onmouseout="clearInterval(repeater);leaveHover(3);">
+      <h1 class="title-text">
+        <a style="font-family:'courier new'">4.</a><span>INT.aMB</span>
+      </h1>
+    </div>
+
+    <div class="title-container track5" onclick="audioManager(4); toggleSpeech(0);"
+      onmouseover="repeater=setInterval(hoverEffect, 300, 4);" onmouseout="clearInterval(repeater);leaveHover(4);">
+      <h1 class="title-text">
+        <a style="font-family:'georgia'">5.</a><span>SUNDaWG</span>
+      </h1>
+    </div>
+
+    <div class="title-container track6" onclick="audioManager(5); toggleSpeech(0);"
+      onmouseover="repeater=setInterval(hoverEffect, 300, 5);" onmouseout="clearInterval(repeater);leaveHover(5);">
+      <h1 class="title-text">
+        <a style="font-family:'tahoma'">6.</a><span>KORDaRP</span>
+      </h1>
+    </div>
+
+    <div class="title-container track7" onclick="audioManager(6); toggleSpeech(0);"
+      onmouseover="repeater=setInterval(hoverEffect, 300, 6);" onmouseout="clearInterval(repeater);leaveHover(6);">
+      <h1 class="title-text">
+        <a style="font-family:garamond">7.</a><span>EXTaUDSEQ</span>
+      </h1>
+    </div>
+
+    <div class="title-container track8" onclick="audioManager(7); toggleSpeech(0);"
+      onmouseover="repeater=setInterval(hoverEffect, 300, 7);" onmouseout="clearInterval(repeater);leaveHover(7);">
+      <h1 class="title-text">
+        <a style="font-family:''Brush Script MT">8.</a><span>COUPLa BEATS</span>
+      </h1>
+    </div>
+
+    <div class="title-container track9" onclick="audioManager(8); toggleSpeech(0);"
+      onmouseover="repeater=setInterval(hoverEffect, 300, 8);" onmouseout="clearInterval(repeater);leaveHover(8);">
+      <h1 class="title-text">
+        <a style="font-family:'Trebuchet MS';">9.</a><span>a NAGGING</span>
+      </h1>
+    </div>
+  </div>
+
+  <div class="page3 page sidepage" onclick="changePage(2)">
+    <pre>
         Chris Lippincott — pedal steel • 3
 
         Matt Glassmeyer — saxophones • 1, 8
@@ -22,4 +122,19 @@
                     piano • 5
                     bass • 8
                     guitar • 9
-      </pre><p>All songs mixed by Dylan Alledridge,<br>Skinny Elephant recording<br>All songs mastered by Trevor Richardson<br>Recorded all over the place<br>Artwork by Micah Mathewson<br>Website by Max Helgemo<br>and Jacob Dawson-Daley</div><script src=script.js></script>
+      </pre>
+
+    <p>
+      All songs mixed by Dylan Alledridge,<br>
+      Skinny Elephant recording<br>
+      All songs mastered by Trevor Richardson<br>
+      Recorded all over the place<br>
+      Artwork by Micah Mathewson<br>
+      Website by Max Helgemo<br>
+      and Jacob Dawson-Daley
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
